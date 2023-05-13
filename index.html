@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <h1>Fakhri JS <span>Note</span>Pad</h1>
+    <input id="noteTitle" type="text" placeholder="Note Title" />
+    <br />
+    <textarea
+      name="textarea"
+      id="writeNote"
+      cols="50"
+      rows="8"
+      placeholder="Write note..."
+    ></textarea>
+    <div id="selectSection">
+      <div class="custom-radios">
+        <div>
+          <input type="radio" id="purple" name="color" value="purple" checked />
+          <label for="purple">
+            <span>
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg"
+                alt="Checked Icon"
+              />
+            </span>
+          </label>
+        </div>
+
+        <div>
+          <input type="radio" id="violet" name="color" value="violet" />
+          <label for="violet">
+            <span>
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg"
+                alt="Checked Icon"
+              />
+            </span>
+          </label>
+        </div>
+
+        <div>
+          <input type="radio" id="blue" name="color" value="blue" />
+          <label for="blue">
+            <span>
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg"
+                alt="Checked Icon"
+              />
+            </span>
+          </label>
+        </div>
+
+        <div>
+          <input type="radio" id="yellow" name="color" value="yellow" />
+          <label for="yellow">
+            <span>
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg"
+                alt="Checked Icon"
+              />
+            </span>
+          </label>
+        </div>
+
+        <div>
+          <input type="radio" id="green" name="color" value="green" />
+          <label for="green">
+            <span>
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg"
+                alt="Checked Icon"
+              />
+            </span>
+          </label>
+        </div>
+      </div>
+      <button id="saveBtn">Save ✓</button>
+    </div>
+    <div id="writeSection">
+      <div id="cards">
+        <div id="card">
+          <div id="cardTitle">
+            <h3 id="title">Add a title to your note</h3>
+            <i id="remove" class="fa-solid fa-trash-can"></i>
+          </div>
+          <p id="paragraph">
+            You can choose a color while adding notes. The notes you add will
+            not be lost even if you refresh the page.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+      <a href="#">
+        Designed & Built by
+        <span>Fakhri Gajar</span>
+      </a>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

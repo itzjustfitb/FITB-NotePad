@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* body {
+  height: 100%;
+  background-color: #ede7f6;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+* body > h1 {
+  margin: 20px 0;
+  font-size: 1.5em;
+}
+* body > h1 > span {
+  color: violet;
+}
+* body #noteTitle {
+  width: 30%;
+  padding: 10px;
+  border: 1px solid rgb(126, 87, 194);
+  outline-color: rgb(81, 45, 168);
+  border-radius: 7px;
+}
+* body #writeNote {
+  width: 30%;
+  padding: 10px;
+  margin-top: 25px;
+  border: 1px solid rgb(126, 87, 194);
+  outline-color: rgb(81, 45, 168);
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+* body #selectSection {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+* body #selectSection .custom-radios div {
+  margin-right: 5px;
+  display: inline-block;
+}
+* body #selectSection .custom-radios input[type=radio] {
+  display: none;
+}
+* body #selectSection .custom-radios input[type=radio] + label {
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+* body #selectSection .custom-radios input[type=radio] + label span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+  transition: 0.4s;
+}
+* body #selectSection .custom-radios input[type=radio] + label span img {
+  opacity: 0;
+  transition: 0.3s;
+}
+* body #selectSection .custom-radios input[type=radio] + label span:hover {
+  transform: translateY(-2px);
+}
+* body #selectSection .custom-radios input[type=radio]#purple + label span {
+  background-color: #f06292;
+}
+* body #selectSection .custom-radios input[type=radio]#violet + label span {
+  background-color: #ba68c8;
+}
+* body #selectSection .custom-radios input[type=radio]#blue + label span {
+  background-color: #4fc3f7;
+}
+* body #selectSection .custom-radios input[type=radio]#yellow + label span {
+  background-color: #ffd54f;
+}
+* body #selectSection .custom-radios input[type=radio]#green + label span {
+  background-color: #aed581;
+}
+* body #selectSection .custom-radios input[type=radio]:checked + label span img {
+  opacity: 1;
+}
+* body #selectSection > #saveBtn {
+  float: right;
+  padding: 10px 15px;
+  background-color: rgb(126, 87, 194);
+  border-radius: 10px;
+  border: 1px;
+  color: white;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.4s;
+}
+* body #selectSection #saveBtn:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+* body footer {
+  margin-top: 30px;
+  height: 253px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #d8b5e4;
+}
+* body footer > div {
+  margin-top: 50px;
+}
+* body footer > div i {
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px 0 hsla(0, 0%, 100%, 0.82), 0 2px 16px 0 #fff;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 40px;
+  margin: 10px;
+  padding: 5px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+* body footer > div i:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  transform: scale(1.2);
+}
+* body footer a {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  font-family: monospace;
+  text-align: center;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 30px;
+}
+* body #writeSection {
+  width: 100%;
+  height: 100%;
+}
+* body #writeSection #cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+* body #writeSection #cards > div {
+  display: inline-block;
+  border-radius: 15px;
+  border: 2px dashed #f06292;
+  margin: 20px 20px 10px;
+  width: 300px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+* body #writeSection #cards > div > #cardTitle {
+  background-color: rgba(240, 98, 146, 0.4);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 30px;
+}
+* body #writeSection #cards > div > #cardTitle > h3 {
+  width: 250px;
+  margin: 0;
+  font-family: monospace;
+}
+* body #writeSection #cards > div > #cardTitle > i {
+  cursor: pointer;
+}
+* body #writeSection #cards > div p {
+  font-family: monospace;
+  padding: 10px;
+  line-height: 20px;
+  font-weight: bold;
+  text-align: left;
+  margin: 0px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1440px) {
+  body {
+    width: 768px;
+    margin: 0 auto;
+  }
+  body #selectSection {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  body #selectSection .custom-radios {
+    display: flex;
+    padding-left: 5px;
+    width: 30%;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    width: 375px;
+    margin: 0 auto;
+  }
+  body #selectSection {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  body #selectSection .custom-radios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 30px;
+    width: 30%;
+  }
+}
