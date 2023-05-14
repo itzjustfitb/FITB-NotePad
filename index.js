@@ -7,7 +7,6 @@ const writeNote = document.getElementById("writeNote");
 // todo: Buttons
 const color = document.getElementsByName("color");
 const saveBtn = document.getElementById("saveBtn");
-const removeBtn = document.getElementById("remove");
 
 // todo: Cards
 const cards = document.getElementById("cards");
@@ -27,11 +26,6 @@ saveBtn.addEventListener("click", () => {
     return alert("Please write a note!");
   }
   const newCard = document.createElement("div");
-
-  console.log(removeBtn);
-
-  if (color[4].value) {
-  }
 
   for (let i = 0; i < color.length; i++) {
     if (color[0].checked == true) {
@@ -110,8 +104,11 @@ saveBtn.addEventListener("click", () => {
 
   cards.append(newCard);
   myArr.push(obj);
+  noteTitle.value = "";
+  writeNote.value = "";
+  newCard.classList.add("");
+});
 
-  removeBtn.addEventListener("click", () => {
-    alert("Saajshdskj");
-  });
+removeBtn.addEventListener("click", () => {
+  alert("Duzelde ala");
 });
