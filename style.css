@@ -197,15 +197,25 @@
     width: 768px;
     margin: 0 auto;
   }
+  body #noteTitle {
+    width: 70%;
+  }
+  body #writeNote {
+    width: 70%;
+  }
+  body #saveBtn {
+    width: 500px;
+  }
   body #selectSection {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 30px;
   }
   body #selectSection .custom-radios {
+    gap: 50px;
     display: flex;
-    padding-left: 5px;
-    width: 30%;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 768px) {
@@ -213,16 +223,21 @@
     width: 375px;
     margin: 0 auto;
   }
+  body #noteTitle {
+    width: 75%;
+  }
   body #selectSection {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 30px;
   }
   body #selectSection .custom-radios {
     display: flex;
-    flex-wrap: wrap;
     gap: 10px;
-    margin-left: 30px;
     width: 30%;
+  }
+  body #selectSection #saveBtn {
+    width: 250px;
   }
 }
