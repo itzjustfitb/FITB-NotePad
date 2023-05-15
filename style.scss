@@ -124,6 +124,24 @@ $blue: #4fc3f7;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       }
     }
+    #searchSection {
+      margin-top: 40px;
+      position: relative;
+      input {
+        width: 500px;
+        height: 40px;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid rgb(126, 87, 194);
+        outline-color: rgb(81, 45, 168);
+        border-radius: 7px;
+      }
+      i {
+        top: 13px;
+        right: 10px;
+        position: absolute;
+      }
+    }
     footer {
       margin-top: 30px;
       height: 253px;
@@ -209,6 +227,19 @@ $blue: #4fc3f7;
             text-align: left;
             margin: 0px;
             font-size: 14px;
+          }
+          textarea {
+            font-size: 14px;
+            line-height: 20px;
+            padding: 10px;
+            font-family: monospace;
+            font-weight: bold;
+            background-color: transparent;
+            border-color: transparent;
+            height: 400px;
+          }
+          textarea:focus {
+            background-color: transparent;
           }
         }
       }

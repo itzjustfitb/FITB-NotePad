@@ -103,6 +103,24 @@
   transform: translateY(-5px);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+* body #searchSection {
+  margin-top: 40px;
+  position: relative;
+}
+* body #searchSection input {
+  width: 500px;
+  height: 40px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid rgb(126, 87, 194);
+  outline-color: rgb(81, 45, 168);
+  border-radius: 7px;
+}
+* body #searchSection i {
+  top: 13px;
+  right: 10px;
+  position: absolute;
+}
 * body footer {
   margin-top: 30px;
   height: 253px;
@@ -190,6 +208,19 @@
   text-align: left;
   margin: 0px;
   font-size: 14px;
+}
+* body #writeSection #cards > div textarea {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px;
+  font-family: monospace;
+  font-weight: bold;
+  background-color: transparent;
+  border-color: transparent;
+  height: 400px;
+}
+* body #writeSection #cards > div textarea:focus {
+  background-color: transparent;
 }
 
 @media screen and (max-width: 1440px) {
